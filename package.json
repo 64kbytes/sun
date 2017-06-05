@@ -1,0 +1,27 @@
+{
+  "name": "solaring",
+  "version": "1.0.0",
+  "description": "Create a neat sundial ring!",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "suncalc": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "budo": "^10.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo browser.js:bundle.js --host localhost --live -- -t babelify",
+    "build": "browserify browser.js -t babelify > bundle.js"
+  },
+  "author": "no_carrier",
+  "license": "ISC",
+  "false": {}
+}
